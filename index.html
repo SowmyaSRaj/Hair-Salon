@@ -37,8 +37,26 @@
     </div>
 
     <div id="menuBtn">
-        <img src="Assets/menu.png" alt="">
+        <img src="Assets/menu.png" alt="menu">
     </div>
     <!-- Side navigation ends -->
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menu = document.getElementById("menu");
+
+        sideNav.style.right = "-250px";
+        
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src = "Assets/close.png";
+            } else{
+                sideNav.style.right = "-250px";
+                menu.src = "Assets/menu.png"
+            }
+        }
+    </script>
 </body>
 </html>
