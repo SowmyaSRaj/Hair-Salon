@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hair Salon</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Banner section starts -->
     <section id="banner">
-        <img src="Assets/logo.png" alt="logo" class="logo">
-    <div class="banner-text">
+      <img src="Assets/logo.png" alt="logo" class="logo" />
+      <div class="banner-text">
         <h1>Hair Studio</h1>
         <p>Style Your Hair Is Style Your Life</p>
         <div class="banner-btn">
-            <a href="#"><span></span>Find Out</a>
-            <a href="#"><span></span>Read More</a>
+          <a href="#"><span></span>Find Out</a>
+          <a href="#"><span></span>Read More</a>
         </div>
-    </div>
+      </div>
     </section>
     <!-- Banner section ends -->
 
     <!-- Side navigation starts -->
     <div id="sideNav">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Meet Us</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Meet Us</a></li>
+        </ul>
+      </nav>
     </div>
 
     <div id="menuBtn">
-        <img src="Assets/menu.png" alt="menu">
+      <img src="Assets/menu.png" alt="menu" />
     </div>
     <!-- Side navigation ends -->
 
     <script>
-        var menuBtn = document.getElementById("menuBtn");
-        var sideNav = document.getElementById("sideNav");
-        var menu = document.getElementById("menu");
+      var menuBtn = document.getElementById("menuBtn");
+      var sideNav = document.getElementById("sideNav");
+      var menu = document.getElementById("menu");
 
-        sideNav.style.right = "-250px";
-        
-        menuBtn.onclick = function(){
-            if(sideNav.style.right == "-250px"){
-                sideNav.style.right = "0";
-                menu.src = "Assets/close.png";
-            } else{
-                sideNav.style.right = "-250px";
-                menu.src = "Assets/menu.png"
-            }
+      sideNav.style.right = "-250px";
+
+      menuBtn.onclick = function () {
+        if (sideNav.style.right == "-250px") {
+          sideNav.style.right = "0";
+          menu.src = "Assets/close.png";
+        } else {
+          sideNav.style.right = "-250px";
+          menu.src = "Assets/menu.png";
         }
+      };
     </script>
-</body>
+  </body>
 </html>
